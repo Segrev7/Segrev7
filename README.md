@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Segrev7
-- 👀 I’m interested in C++/JavaScript 
-- 🌱 I’m currently learning C++/JavaScript 
+- 👀 I’m interested in C++/JavaScript/HTML/CSSS
+- 🌱 I’m currently learning C++/JavaScript/HTML/CSSS
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me igorhernik@gmail.com 
 
