@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+        <h1>Proste działania</h1>
+    <label for="a">Podaj pierwszą liczbę</label><input type="number" id=a><br><br>
+    <label for="b">Podaj drugą liczbę</label><input type="number" id=b><br><br>
+    <input type="button" value="DODAWANIE" onclick="suma()">
+    <input type="button" value="ODEJMOWANIE" onclick="odejm()">
+    <input type="button" value="MNOŻENIE" onclick="mnoż()">
+    <input type="button" value="DZIELENIE" onclick="dziel()">
+    <div id=wynik></div>
+    <script>
+        function suma(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        a=parseFloat(a);
+        b=parseFloat(b);
+        if (a=="" || b=="")
+        {
+            document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby";
+        }
+        else{
+        document.getElementById("wynik").innerHTML="Wynik działania wynosi: " +(a+b)
+        }
+        }
+        function odejm(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        a=parseFloat(a);
+        b=parseFloat(b);
+        if (a=="" || b=="")
+        {
+            document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby";
+        }
+        else{
+        document.getElementById("wynik").innerHTML="Wynik działania wynosi: " +(a-b)
+        }
+        }
+        function dziel(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        a=parseFloat(a);
+        b=parseFloat(b);
+        if (a=="" || b=="")
+        {
+            document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby";
+        }
+        else{
+        document.getElementById("wynik").innerHTML="Wynik działania wynosi: " +(a/b)
+        }
+        }
+        function mnoż(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        a=parseFloat(a);
+        b=parseFloat(b);
+        if (a=="" || b=="")
+        {
+            document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby";
+        }
+        else{
+        document.getElementById("wynik").innerHTML="Wynik działania wynosi: " +(a*b)
+        }
+        }
+    </script>
+</body>
+</html>

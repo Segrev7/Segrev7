@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+   <label for="a">Twoje hasło</label><input type="password" id="a"><br><br>
+    <input type="button" value="Sprawdź" onclick="obl()">
+
+    <div id=wynik></div>
+    <script>
+          function obl(){
+        var a = document.getElementById("a").value;
+        var d = a.length;
+            if(a==""){
+            document.getElementById("wynik").innerHTML="<span style=color:red;>WPISZ HASŁO!</span>";
+          }else if(a.math(/\d+/) && d >= 7)
+          {
+            document.getElementById("wynik").innerHTML="<span style=color:green;>DOBRE!</span>";
+          }
+          
+          else if(a.math(/\d+/) && d >= 4 && d,<=6)
+          {
+            document.getElementById("wynik").innerHTML="<span style=color:blue;>ŚREDNIE!</span>";
+          }
+          else{
+            document.getElementById("wynik").innerHTML="<span style=color:yellow;>SŁABE</span>";
+          }
+   
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Obliczanie średniej ocen</h4>
+    <ul>
+        <li>Polak <input type="text" id="a"></li>
+        <li>Nowak <input type="text" id="b"></li>
+        <li>Rysik <input type="text" id="c"></li>
+    </ul>
+    <input type="button" value="Oblicz" onclick="oblicz()">
+    <h4>Średnia ocen</h4><br>
+    <div id="wynik"></div>
+    <script>
+        function oblicz(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c = document.getElementById("c").value;
+            if(a=="" || b=="" || c==""){
+                document.getElementById("wynik").innerHTML="wpisz poprawne dane";
+            }else {
+                a=parseFloat(a);
+                b=parseFloat(b);
+                c=parseFloat(c);
+                document.getElementById("wynik").innerHTML=(a+b+c)/3;
+            }
+        }
+    </script>
+</body>
+</html>

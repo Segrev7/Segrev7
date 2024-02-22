@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            var a=prompt("podaj liczbę", "");
+            a=parseFloat(a)
+            document.write("liczba zwiększona o 15 to: "+(a+15)+"<br>");
+            document.write("liczba powiększona o 0.5 to: "+(a+0.5)+"<br>");
+            document.write("kwadrat wprowadzonej liczby to: "+(a*a)+"<br>");
+            document.write("liczba podzielona przez dwa to: "+(a/2)+"<br>");
+            document.write("reszta z dzielenia przez 2 to: "+(a%2)+"<br>");
+            document.write("liczba o jeden mniejsza to: "+(a-1)+"<br>");
+            document.write("liczba o 1 większa to: "+(a+1)+"<br>");
+            document.write("liczba zaokrąglona round: "+Math.round(a, 3)+"<br>");
+            document.write("liczba zaokrąglona w dół: "+Math.floor(a, 3)+"<br>");
+            var b=(a/3);
+            document.write("liczba zaokrąglona w dół powstałą z podziału wprowadzonej liczby: "+Math.round(b, 3)+"<br>");
+            document.write("pierwiastek z wprowadzonej liczby: "+Math.sqrt(a)+"<br>");
+            var c=Math.random(0, 50)*50;
+            document.write("<br> losowa "+c);
+            document.write("<br> liczba pomnożona przez losową "+(a*c));
+        document.write("<br> wartość absolutna: "+Math.abs(a));
+        </script>
+    </body>
+</html>
