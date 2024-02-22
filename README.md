@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @Segrev7
-- 👀 I’m interested in C++/JavaScript/HTML/CSSS
-- 🌱 I’m currently learning C++/JavaScript/HTML/CSSS
+- 👋 Hi, I’m Igor
+- 👀 I’m interested in C#/PHP/JavaScript/HTML/CSSS
+- 🌱 I’m currently learning C#/PHP/JavaScript/HTML/CSSS
 - 💞️ I’m looking to collaborate on ...
 
 
