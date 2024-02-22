@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+        <h2>Zamiana jednostek temperatury</h2>
+   Temperatura w <sub(0)>C</sub><br>
+
+   <input type="text" id="a"><br><br>
+   zamiana na<br><br>
+    <input type="button" value="Kelwiny" onclick="obl(1)">
+    <input type="button" value="Farenheity" onclick="obl(2)">
+    <div id=wynik></div>
+    <script>
+        var a=document.getElementById("a").value;
+        function obl(znak){
+        if (isNaN (a)== true)
+        {
+            document.getElementById("wynik").innerHTML="Porszę podać liczby nie litery";
+        }
+        else{ a=parseFloat(a);
+            switch (znak){
+                case 1:
+            document.getElementById("wynik").innerHTML="K = (C+273.15)" +(a+273.15);
+            break;
+            case 2:
+                document.getElementById("wynik").innerHTML="F = (C*1,8) + 32 = " +((a*1.8)+32);
+                break;
+        }
+    }
+}
+    </script>
+</body>
+</html>

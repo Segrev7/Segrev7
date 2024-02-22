@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+        <h1>Proste działania</h1>
+    <label for="a">Podaj pierwszą liczbę</label><input type="text" id=a><br><br>
+    <input type="button" value="Licz pole" onclick="suma()">
+    <input type="button" value="Licz obwód" onclick="odejm()">
+    <div id=wynik></div>
+    <script>
+        function suma(){
+        var a=document.getElementById("a").value;
+        if (isNaN (a)= true)
+        {
+            document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby";
+        }
+        else{ a=parseFloat(a);
+            switch (znak){
+                case 1:
+            document.getElementById("wynik").innerHTML="P = a<sub(2)> = " +(a*a);
+            break;
+            case 2:
+                document.getElementById("wynik").innerHTML="Obw = 4a = " +(4*a);
+                break;
+        }
+    }
+}
+    </script>
+</body>
+</html>

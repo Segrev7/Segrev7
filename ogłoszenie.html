@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ile kosztuje ogłoszenie?</h2>
+    Podaj liczbę ogłoszeń:<br>
+    <input type="number" id="a"><br>
+    <input type="checkbox" id="b">Policz upust na newsletter <br>
+    <input type="button" value="Oblicz" onclick="koszty()">
+    <div id="wynik"></div>
+    <script>
+        function koszt(){
+            var a = document.getElementById("a").valueAsNumber;
+            var b = document.getElementById("b");
+            if(a==""){
+                document.getElementById("wynik").innerHTML="Wprowadź dane";
+            }else if (a<=50 && b.checked==true){
+                var c=(a*2)-(a*0.2);
+                document.getElementById("wynik").innerHTML="koszt ogłoszeń: "+c+" PLN";
+            }else if (a>50 && b.checked==true){
+                var c=(a*1)-(a*0.2);
+                document.getElementById("wynik").innerHTML="koszt ogłoszeń: "+c+" PLN";
+            }else if (a<=50){
+                var c=(a*2);
+                document.getElementById("wynik").innerHTML="koszt ogłoszeń: "+c+" PLN";
+            }else {
+                var c=a*1;
+                document.getElementById("wynik").innerHTML="koszt ogłoszeń: "+c+" PLN";
+            }
+        }
+    </script>
+</body>
+</html>

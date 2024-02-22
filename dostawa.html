@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h3>Oblicz koszt dostawy</h3><br>
+    <p>albo</p>
+    Podaj liczbę kilometrów od Zielonej Góry:<input type="number" id="b"><br>
+
+    <input type="checkbox" value="Oblicz" onclick="oblicz()">
+    <div id="wynik"></div>
+    <script>
+        function oblicz(){
+            var a = document.getElementById("a");
+            var b = document.getElementById("b").value;
+            if(a.checked==true){
+                document.getElementById("wynik").innerHTML="Dowieziemy Twoją pizzę za darmo";
+            }else {
+                document.getElementById("wynik").innerHTML="Dowóz będzie Cię kosztował "+b*1 +" złotych";
+            }
+        }
+    </script>
+</body>
+</html>
