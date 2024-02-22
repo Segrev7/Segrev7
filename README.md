@@ -2,6 +2,7 @@
 - 👀 I’m interested in C#/PHP/JavaScript/HTML/CSSS
 - 🌱 I’m currently learning C#/PHP/JavaScript/HTML/CSSS
 - 💞️ I’m looking to collaborate on ...
+- on my profile you can see some of my work maybe its pretty easy for every one but i think it better have something 
 
 
 <!---
